@@ -2,11 +2,9 @@ import axios from "axios"
 import Card from "../components/card";
 
 export default function Home({events}){
-  console.log(events)
   return (
-    <div>
-        <h2 className="font-bold">Card Components for Event, Lecture, Announcement, Conference</h2>
-        <div className="flex">
+    <div id="main" className="container mx-auto">
+        <div className="flex flex-wrap items-center content-center">
         {
           events.map(event => 
             <Card key={event.id} img={`http://localhost:1337`+ event.attributes.image.data[0].attributes.url}
