@@ -38,7 +38,7 @@ function Header(){
                             <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Yönetim Kurulu</a>
                         </li>
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="aboutUs">Hakkımızda</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="/aboutUs">Hakkımızda</a>
                         </li>
                     </ul>
                 </div>
