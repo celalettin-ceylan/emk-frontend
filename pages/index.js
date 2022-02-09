@@ -12,7 +12,7 @@ export default function Home({events, members}){
         {
           events.map(event => 
             <Card key={event.id} img={`http://127.0.0.1:1337`+ event.attributes.image.data[0].attributes.url}
-              description={event.attributes.description}
+              description={event.attributes.brief}
               title={event.attributes.name}
               id={event.id}
               date={event.attributes.date}
