@@ -21,7 +21,8 @@ export default function Home({events, members}){
         }
         </div>
 
-        <div className="flex flex-wrap items-center justify-center">
+        <h2 className="text-center mt-10 text-xl text-black rounded"> Yönetim Kurulu </h2>
+        <div className="flex flex-wrap items-center justify-center mt-10">
         {
           members.map(member => 
             <MemberCard key={member.id} img={`http://127.0.0.1:1337`+ member.attributes.image.data.attributes.url}
