@@ -7,7 +7,7 @@ export default function Home({events}){
         <div className="flex flex-wrap items-center content-center">
         {
           events.map(event => 
-            <Card key={event.id} img={`http://localhost:1337`+ event.attributes.image.data[0].attributes.url}
+            <Card key={event.id} img={`http://127.0.0.1:1337`+ event.attributes.image.data[0].attributes.url}
               description={event.attributes.description}
               title={event.attributes.name}
               id={event.id}
@@ -22,7 +22,7 @@ export default function Home({events}){
 
 // This gets called on every request
 export async function getServerSideProps() {
-  const res = await axios.get('http://localhost:1337/api/events?populate=*');
+  const res = await axios.get('http://127.0.0.1:1337/api/events?populate=*');
   const data = await res.data.data;
   console.log(data)
   return { props: {events: data}}
