@@ -4,10 +4,11 @@ import MemberCard from "../components/memberCard";
 
 
 export default function Home({events, members}){
-  console.log(members)
   return (
     <div id="main" className="container mx-auto">
-        <div className="flex flex-wrap items-center content-center">
+
+        <h2 className="text-center mt-5 text-xl text-black rounded"> Etkinlikler </h2>
+        <div className="flex flex-wrap items-center justify-center">
         {
           events.map(event => 
             <Card key={event.id} img={`http://127.0.0.1:1337`+ event.attributes.image.data[0].attributes.url}
@@ -18,18 +19,15 @@ export default function Home({events, members}){
             />
             )
         }
-        
         </div>
 
-        <div className="flex flex-wrap items-center content-center">
+        <div className="flex flex-wrap items-center justify-center">
         {
           members.map(member => 
-            <MemberCard key={member.id} img="https://avatars.githubusercontent.com/u/27349806?s=400&u=1acb7223230c37146d4826d2b15d7e0d8ee69c24&v=4"
-              description={member.attributes.curriculum_vitae}
+            <MemberCard key={member.id} img={`http://127.0.0.1:1337`+ member.attributes.image.data.attributes.url}
               name={member.attributes.name}
-              title="Lorem Ipsum"
+              title={member.attributes.title}
               id={member.id}
-              date={member.attributes.date}
             />
             )
         }
