@@ -13,13 +13,6 @@ export default function Post({ member }) {
 
 export async function getServerSideProps({ params }) {
     // Fetch necessary data for the blog post using params.id
-    const memberId = params.memberId
-    const memberData = await axios.get('http://127.0.0.1:1337/api/members/' + memberId+"?populate=*");
-    const member = await memberData.data.data;
-    // console.log(member.attributes.image)
-    return {
-        props: {
-            member
-        }
-    }
+    // fetch firebase
+    return {props: {member}}
 }

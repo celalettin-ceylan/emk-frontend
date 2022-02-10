@@ -13,10 +13,7 @@ export default function Post({ event }) {
 
 export async function getServerSideProps({ params }) {
     // Fetch necessary data for the blog post using params.id
-    const eventId = params.eventId
-    const eventData = await axios.get('http://127.0.0.1:1337/api/events/' + eventId+"?populate=*");
-    const event = await eventData.data.data;
-    console.log(event)
+    // fetch firebase
     return {
         props: {
             event
