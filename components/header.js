@@ -23,22 +23,28 @@ function Header(){
                     </button>
                 </div>
 
-                <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0` + (isDisplay ? " visible" : " hidden")}>
+                <div className={`w-full flex-grow lg:items-center lg:w-auto lg:block pt-6 lg:pt-0` + (isDisplay ? " visible" : " hidden")}>
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Etkinlikler</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Kurumsal</a>
                         </li>
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Haberler</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Faliyetlerimiz</a>
                         </li>
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Dersler</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Şubeler</a>
                         </li>
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Yönetim Kurulu</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="#">Komisyonlar</a>
                         </li>
                         <li className="mr-3 hover:bg-white hover:rounded">
-                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="/aboutUs">Hakkımızda</a>
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="/aboutUs">Sosyal Medya</a>
+                        </li>
+                        <li className="mr-3 hover:bg-white hover:rounded">
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="/aboutUs">Üyelik</a>
+                        </li>
+                        <li className="mr-3 hover:bg-white hover:rounded">
+                            <a className="block text-white no-underline hover:text-zinc-800 py-2 px-4" href="/aboutUs">İletişim</a>
                         </li>
                     </ul>
                 </div>
