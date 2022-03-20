@@ -1,4 +1,4 @@
-import Header from "./header.js";
+import Header from "./Header.js";
 function Layout({children}){
     return (
         <div className="layout">
