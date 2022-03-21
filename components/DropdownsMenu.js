@@ -9,11 +9,9 @@ export default function DropdownsMenu({ menu }) {
              onMouseEnter={() => setVisible(true)}
              onMouseLeave={() => setVisible(false)}   
             >
-            <Link href="#">
-                <a className={`block lg:flex lg:items-center bg-white h-10 pl-3 lg:px-4 lg:mx-4 lg:bg-inherit lg:text-white lg:h-20 ` + (isVisible ? "lg:bg-zinc-800" : "")}>
+            <div className={`flex items-center h-10 pl-3 lg:px-4 lg:mx-4 lg:bg-inherit lg:text-white lg:h-20 ` + (isVisible ? "lg:bg-zinc-800" : "")}>
                     {menu.header}
-                </a>
-            </Link>
+            </div>
             <div className={`bg-zinc-800 lg:absolute lg:border-[1px] lg:border-white lg:top-20 lg:z-20 lg:rounded-md` + (isVisible ? " block" : " hidden")}>
                 {menu.links.map(link =>
                     <Link href={link.uri} key={link.text}>
