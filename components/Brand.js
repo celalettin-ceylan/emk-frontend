@@ -1,4 +1,4 @@
-export default function () {
+export default function Brand() {
     return (
         <div className="flex items-center flex-no-shrink text-white">
             <a className="text-white no-underline hover:text-white hover:no-underline flex items-center" href="#">
